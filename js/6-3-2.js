@@ -8,7 +8,11 @@ $(window).on('load',function(){
 function loading()
 {
   // $("#loading").addClass('disappear');
+
+  if(window.screen.width >= 768)
+  {
   $("#youtube-area").addClass('appear');
+  }
 }
 
 //youtube API

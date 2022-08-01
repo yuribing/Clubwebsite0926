@@ -6,8 +6,7 @@
     text-align: center;
     color: #fff;
     /* background: url("movie.jpg") no-repeat; */
-    background-size: cover;
-   
+    background-size: contain;
 }
 
 /* #loading {

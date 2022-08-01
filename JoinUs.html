@@ -11,16 +11,15 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" 
         />
         <link rel="stylesheet" href="style.css" />
-
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/6-3-2.css">
         <script src="script.js"></script>
     </head>
-    <body>
+    <body style="background: url('/img/movie.jpg') no-repeat; background-size: cover;">
         <div class="pre-container">
-             <!--This is for the video this might be temporary-->    
-             <header id="header">
-                <div id="loading">Loading...</div>
+        <!--This is for the video this might be temporary-->    
+            <header id="header">
+                <!-- <div id="loading" style="top: 1000; height: 550px; width:  550px;">Loading...</div> -->
                 <div id="youtube-area">
                     <h1>Title</h1>
                     <div id="youtube"></div>
@@ -35,30 +34,41 @@
                         <i class="fas fa-book"></i>
                         Web Dev Syndicate
                     </p>
-
-                  
-                </nav>
-                <nav>
                     <ul> <!--highlighted class is the current page class so for the index page it is home-->
                         <li><a href="index.html">Home</a></li>
                         <li><a href="Leaders.html">Leaders</a></li>
                         <li><a href="Contact.html">Contact</a></li>
-                        <li><a href="JoinUs.html"  class="highlight">Join us</a></li>
+                        <li><a href="JoinUs.html" class="highlight">Join us</a></li>
                     </ul>
                 </nav>
+                <div class="pre-content">
                 <!-- This is the start of the main content, use everything before as a template-->
-                <div class="content">
-                <h2>To join the club please follow the steps below:</h2>
-                
+                    <div class="content">
+                    
+                        <h2>To join the club please follow the steps below:</h2>
+                        <div class="introtext">
+                            Step 1: Please fill out the form below
+                        </div>
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScUq2s-8G5sge95GWlvcEH8dq_VTkY9PEHstQVcaLZuwx31nA/viewform?embedded=true"  frameborder="0"  scrolling="no" marginheight="0" marginwidth="0">Loading…</iframe>
+                        </iframe>
+                        <div class="introtext">
+                            Step 2: Join our discord
+                        </div>
 
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScUq2s-8G5sge95GWlvcEH8dq_VTkY9PEHstQVcaLZuwx31nA/viewform?embedded=true"  frameborder="0"  scrolling="no" marginheight="0" marginwidth="0">Loading…</iframe>
-                </iframe> 
-                </div>
+                        <a href="https://discord.gg/hBbA5rMK8e" class="buttonopt1">
+                            click here to join discord
+                        </a>
+                         
+                    </div>
                 <!-- this is the end of the content, use everything before as a template-->
+                </div>
             </div>
         </div>
-
+    
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="js/6-3-2.js"></script>
+    
     </body>
 </html>
+
+

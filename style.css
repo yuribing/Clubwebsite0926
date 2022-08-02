@@ -4,7 +4,12 @@
 }
 body{
     font-family: "Crimson", sans-serif;
-    font-size: 1vw;
+    font-size: 2vw;
+
+    background-image: url("backimage.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat:no-repeat;
   
 }
 #video{
@@ -13,14 +18,6 @@ body{
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-}
-.pre-container{
-    background-image: url("backimage.jpg");
-    background-size: contain;
-    background-position: center center;
-    background-repeat:no-repeat;
-    min-height:150vh;
-    
 }
 a{
     color: rgb(252, 246, 246);
@@ -55,8 +52,16 @@ nav{
     font-weight: bold;
     font-size: 2.5rem;
     cursor:default;
+}
+.logo a{
 
-  
+    color:black;
+    font-weight:bold;
+    font-size:2.5rem;
+    cursor:default;
+}
+.logo a:hover{
+    text-decoration:none;
 }
 .logo-text{
     font-weight: bold;
@@ -170,13 +175,22 @@ nav a:hover{
     color:white;
     font-weight:700;
 }
+.info{
+    display:block;
+    float:left;
+    position:absolute;
+    bottom:0;
+}
+.jinfo ul{
+    list-style-type:circle;
+    display:block;
+}
 .btxt{
     float:right;
     padding:5px;
     display:flex;
-    background-color:white;
     margin:0% 5%;
-    border:darkgrey 1px solid;
+    clear:right;
 }
 .buttonopt1{
     margin: 3% 15%;
@@ -208,7 +222,6 @@ nav a:hover{
 }
 @media screen and (max-width:768px) {
     .pre-nav{
-        font-size: 0.5rem;
         align-items: center;
         flex-direction: column;
     }
@@ -218,20 +231,22 @@ nav a:hover{
 
     .content{
         margin-top: 1rem;
-        font-size: 1.5rem;
+        font-size: 16px;
     }
     .content h1 {
         font-size: 1.25rem;
     }
     .content h2 {
-        font-size: 1.25rem;
+        font-size: 1.75rem;
     }
-
+    
     .content iframe{
         margin-top:3em;
         align-self:center;
         width: 0.5 rem;
-        height:2200px;
+        height:2100px;
+        font-size:16px;
+        position:relative;
     }
 
 }

@@ -5,7 +5,6 @@
 body{
     font-family: "Crimson", sans-serif;
     font-size: 2vw;
-
     background-image: url("backimage.jpg");
     background-size: cover;
     background-position: center center;
@@ -31,7 +30,7 @@ a{
 
 .container:only-child(.content)
 {
-    padding:25%;
+    padding:20%;
 }
 
 nav{
@@ -39,13 +38,13 @@ nav{
  
 }
 .pre-nav{
-    font-size: 1rem;
+    font-size: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color:white;
     border: 1px solid black;
-    min-width:600px;
+    width:100vw;
 }
 .logo{
     color:black;
@@ -57,7 +56,7 @@ nav{
 
     color:black;
     font-weight:bold;
-    font-size:2.5rem;
+    font-size:75%;
     cursor:default;
 }
 .logo a:hover{
@@ -95,8 +94,8 @@ nav a:hover{
    
 }
 .pre-content{
-    padding: 0% 10%;
-    min-width:600px;
+    padding: 3% 15%;
+    width:100vw;
 }
 .content{
     border: 10px solid white;
@@ -104,7 +103,6 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     font-size: 1rem;
-    margin:0 auto;
     align-items: flex-start;
     margin-top:3rem;
     
@@ -142,20 +140,30 @@ nav a:hover{
     color:black;
     font-size:1rem;
 }
-.content ul{
-    margin:1em 5%;
-    display: flex;
-    list-style-type: none;
-    align-self:center;
-}
 .introtext{
-    margin:1% 5%;
-    align-self:center;
+    margin:1% 10%;
     border-left:solid grey 3px;
     padding: 1em;
     color: black;
     display:inline-block;
     background-color:white;
+}
+.jinfo ul{
+    list-style-type:circle;
+    display:block;
+    margin:0% 10%;
+}
+.jinfo li{
+    padding:1%;
+}
+.flexcontainer{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    margin:1em 10%;
+    align-self:center;
+   row-gap: 10px;
 }
 .preimg{
     
@@ -168,40 +176,32 @@ nav a:hover{
     height: 250px;
     text-align: center;
     background-color:grey;
-    float:left;
-    display:flex;
 }
 .preimg p{
     color:white;
     font-weight:700;
 }
-.info{
-    display:block;
-    float:left;
-    position:absolute;
-    bottom:0;
-}
-.jinfo ul{
-    list-style-type:circle;
-    display:block;
-}
 .btxt{
-    float:right;
-    padding:5px;
-    display:flex;
+    padding:2%;
     margin:0% 5%;
-    clear:right;
+    max-width:70%;
 }
 .buttonopt1{
-    margin: 3% 15%;
-    display:inline-block;
+    margin: 0% 10%;
+    display:block;
     background-color:grey;
-    padding:1vw;
-    border-radius:10px;
+    padding:10px;
+    border-radius:4px;
     border:5px solid transparent;
-    font-weight:500;
+    font-weight:bold;
+    transition:0.3s;
 }
 
+.regtxt
+{
+    font-size:large;
+    margin: 1% 10%;
+}
 .buttonopt1:hover
 {
     color:black;
@@ -224,11 +224,19 @@ nav a:hover{
     .pre-nav{
         align-items: center;
         flex-direction: column;
+        height:fit-content;
+    }
+    .pre-nav li a{
+        font-size:185%;
+        padding:10px 20px;
     }
     nav{
         flex-direction: column;
     }
-
+    .pre-content{
+    padding:0%;
+    margin:0%;
+    }
     .content{
         margin-top: 1rem;
         font-size: 16px;
@@ -239,6 +247,10 @@ nav a:hover{
     .content h2 {
         font-size: 1.75rem;
     }
+
+    .flexcontainer{
+        margin:0%;
+    }
     
     .content iframe{
         margin-top:3em;
@@ -247,6 +259,19 @@ nav a:hover{
         height:2100px;
         font-size:16px;
         position:relative;
+    }
+
+    .btxt{
+        width:auto;
+        flex-grow:4;
+    }
+
+    .buttonopt1{
+        margin: 10px 10%;
+    }
+    
+    .regtxt{
+        margin: 10px 10%;
     }
 
 }

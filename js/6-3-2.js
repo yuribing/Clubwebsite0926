@@ -1,18 +1,13 @@
 
 $(window).on('load',function(){ 
   setTimeout(loading,2000);
-  //  $("#backimage").addClass('diappearimage');
 });
 
 
 function loading()
 {
-  // $("#loading").addClass('disappear');
-
-  if(window.screen.width >= 768)
-  {
   $("#youtube-area").addClass('appear');
-  }
+ 
 }
 
 //youtube API
@@ -49,7 +44,6 @@ function onYouTubeIframeAPIReady() {
 function onPlayerReady(event) {
   event.target.mute();
   event.target.playVideo();
-// event.target.playVideo(start(6));
 }
 
 

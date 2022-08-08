@@ -9,7 +9,20 @@ body{
     background-size: cover;
     background-position: center center;
     background-repeat:no-repeat;
+    overflow-x:hidden;
   
+}
+footer{
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:white;
+    color: black;
+    text-align: center;
+    font-size: small;
+    border-top:1px solid black;
+    padding:1vh;
 }
 #video{
     position: fixed;
@@ -56,7 +69,7 @@ nav{
 
     color:black;
     font-weight:bold;
-    font-size:75%;
+    font-size:100%;
     cursor:default;
 }
 .logo a:hover{
@@ -147,11 +160,12 @@ nav a:hover{
     color: black;
     display:inline-block;
     background-color:white;
+    text-align:justify;
 }
 .jinfo ul{
     list-style-type:circle;
     display:block;
-    margin:0% 10%;
+    margin:0% 20%;
 }
 .jinfo li{
     padding:1%;
@@ -184,7 +198,8 @@ nav a:hover{
 .btxt{
     padding:2%;
     margin:0% 5%;
-    max-width:70%;
+    max-width:60%;
+    text-align: justify;
 }
 .buttonopt1{
     margin: 0% 10%;
@@ -201,6 +216,7 @@ nav a:hover{
 {
     font-size:large;
     margin: 1% 10%;
+    text-align: justify;
 }
 .buttonopt1:hover
 {
@@ -221,6 +237,9 @@ nav a:hover{
     margin-top: 2rem;
 }
 @media screen and (max-width:768px) {
+    .logo a{
+        font-size:75%;
+    }
     .pre-nav{
         align-items: center;
         flex-direction: column;
@@ -235,6 +254,7 @@ nav a:hover{
     }
     .pre-content{
     padding:0%;
+    padding-bottom: 10%;
     margin:0%;
     }
     .content{
@@ -264,6 +284,7 @@ nav a:hover{
     .btxt{
         width:auto;
         flex-grow:4;
+        max-width: 95%;
     }
 
     .buttonopt1{
@@ -273,5 +294,4 @@ nav a:hover{
     .regtxt{
         margin: 10px 10%;
     }
-
 }

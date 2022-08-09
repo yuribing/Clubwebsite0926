@@ -182,12 +182,12 @@ nav a:hover{
 .preimg{
     
     border: 2px solid black;
-    background: url("https://cache.lovethispic.com/uploaded_images/192646-Everything-Is-Temporary.jpg");
+    background: url("/img/speaker1.jpg");
     background-repeat: no-repeat;
-    background-size: 200px 200px;
+    background-size: 225px 275px;
     background-position: bottom;
-    width: 200px;
-    height: 250px;
+    width: 225px;
+    height: 300px;
     text-align: center;
     background-color:grey;
 }

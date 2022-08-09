@@ -131,16 +131,8 @@ nav a:hover{
     font-weight: 200;
 }
 .content h2{
-    align-self:center;
-    font-size:200%;
-    border-left:solid grey 3px;
-    padding: 1em;
-    color: black;
-    display:inline-block;
-    background-color:white;
-    font-weight:200;
-    margin-top:1em;
-
+ margin:3% 10%;
+ font-size: 2vw;
 }
 .content iframe{
     margin-top:1em;
@@ -160,7 +152,7 @@ nav a:hover{
     color: black;
     display:inline-block;
     background-color:white;
-    text-align:justify;
+    text-align:left;
 }
 .jinfo ul{
     list-style-type:circle;
@@ -175,9 +167,9 @@ nav a:hover{
     flex-direction:row;
     flex-wrap:wrap;
     justify-content:space-evenly;
+    align-self: center;
     margin:1em 10%;
-    align-self:center;
-   row-gap: 10px;
+    row-gap: 10px;
 }
 .preimg{
     
@@ -199,7 +191,7 @@ nav a:hover{
     padding:2%;
     margin:0% 5%;
     max-width:60%;
-    text-align: justify;
+    text-align: left;
 }
 .buttonopt1{
     margin: 0% 10%;
@@ -211,12 +203,32 @@ nav a:hover{
     font-weight:bold;
     transition:0.3s;
 }
-
 .regtxt
 {
     font-size:large;
     margin: 1% 10%;
-    text-align: justify;
+    text-align: left;
+}
+.flex-left-align{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    margin:1em 10%;
+    row-gap: 10px;
+    column-gap:10px;
+    align-items:center;
+}
+.flex-img-box{
+ text-align:center;
+ font-family:Arial, Helvetica, sans-serif;
+}
+.flex-img-box img{
+    height:auto;
+    width:10vw;
+}
+.flex-img-box p{
+    font-size: 130%;
 }
 .buttonopt1:hover
 {
@@ -271,7 +283,6 @@ nav a:hover{
     .flexcontainer{
         margin:0%;
     }
-    
     .content iframe{
         margin-top:3em;
         align-self:center;
@@ -280,17 +291,18 @@ nav a:hover{
         font-size:16px;
         position:relative;
     }
-
     .btxt{
         width:auto;
         flex-grow:4;
         max-width: 95%;
     }
-
+    .flex-img-box img{
+        height:auto;
+        width:22vw;
+    }
     .buttonopt1{
         margin: 10px 10%;
     }
-    
     .regtxt{
         margin: 10px 10%;
     }

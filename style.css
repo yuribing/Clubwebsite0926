@@ -216,6 +216,8 @@ nav a:hover{
 .flex-left-joinUsSteps{
     align-items:flex-start;
     margin:0;
+    margin-top:2.5em;
+    flex-wrap: nowrap;
 }
 .flex-img-box{
  text-align:center;
@@ -249,10 +251,13 @@ nav a:hover{
 }
 #step1{
     width:auto;
+    flex-shrink:1;
 }
 #step2{
     width:auto;
-    max-width: 675px;
+    flex-shrink:2;
+    max-width:700px;
+    border-left: 2px solid grey;
 }
 @media screen and (max-width:768px) {
     .logo a{
@@ -291,6 +296,9 @@ nav a:hover{
     .flexcontainer{
         margin:0%;
     }
+    .flex-left-joinUsSteps{
+        flex-wrap:wrap;
+    }
     .content iframe{
         margin-top:3em;
         align-self:center;
@@ -315,6 +323,6 @@ nav a:hover{
         margin: 5px 5%;
     }
     #step2{
-        min-width: auto;
+        border:none;
     }
 }
